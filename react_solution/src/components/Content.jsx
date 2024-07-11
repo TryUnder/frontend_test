@@ -29,8 +29,8 @@ const Content = () => {
                     <div className="second-block">
                         <p className="font-style">BLOK DRUGI</p>
                         <div className="buttons-div">
-                            <button className="font-style">ZASTĄP</button>
-                            <button className="font-style">DOKLEJ</button>
+                            <button className="font-style buttons-hov">ZASTĄP</button>
+                            <button className="font-style buttons-hov">DOKLEJ</button>
                         </div>
                         
                     </div>

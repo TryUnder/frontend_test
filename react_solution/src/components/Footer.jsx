@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../scss/Footer.scss';
 
-const Footer = ({FontAwesomeIcon, faChevronUp}) => {
+const Footer = ({FontAwesomeIcon, faChevronUp, faChevronRight, faChevronDown}) => {
     const [ isPanelVisible, setPanelVisible ] = useState(false)
 
     const togglePanel = () => {
@@ -22,19 +22,28 @@ const Footer = ({FontAwesomeIcon, faChevronUp}) => {
             <footer className="footer">
                 <div className="footer-flex">
                     <p className="footer-text">CSS<br/> IS<br/> AWESOME<br/></p>
-                    <p className="footer-text-logo">nabthat</p>
+                    <p className="footer-text-logo"><span>nabthat</span></p>
                     <div>
                         <button className="footer-button" onClick = {togglePanel}>
-                            POKAŻ
-                            <FontAwesomeIcon icon={faChevronUp} />
+                            <p><b>POKAŻ</b></p>
+                            {
+                                isPanelVisible ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp}  />
+                            }
                         </button>
                     </div>
                 </div>
                 {
                     isPanelVisible && (
                         <div className="footer-panel">
-                            <button onClick={resetContent}>ZRESETUJ USTAWIENIA</button>
-                            <button onClick={appendName}>POKAŻ DANE OSOBOWE</button>
+                            <div className="footer-panel-options">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                                <a onClick={resetContent}>ZRESETUJ USTAWIENIA</a>
+                            </div>
+                            <div className="footer-panel-options">
+                                <FontAwesomeIcon icon={faChevronRight} />
+                                <a onClick={appendName}>POKAŻ DANE OSOBOWE</a>
+                            </div>
+                            
                         </div>
                     )
                 }

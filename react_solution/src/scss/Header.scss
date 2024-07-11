@@ -4,6 +4,12 @@
     margin-left: 2rem;
 }
 
+.logo:hover {
+    cursor: pointer;
+    background-image: url("../images/logo_orange.png");
+    
+}
+
 .header-par {
     color: rgba(254,255,254,255);
     margin: 0;

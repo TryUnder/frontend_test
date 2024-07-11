@@ -1,6 +1,6 @@
 import './scss/App.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp, faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 import Header from '../src/components/Header.jsx';
 import Content from '../src/components/Content.jsx';
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <Content />
-      <Footer FontAwesomeIcon = {FontAwesomeIcon} faChevronUp={faChevronUp} />
+      <Footer FontAwesomeIcon = {FontAwesomeIcon} faChevronUp={faChevronUp} faChevronRight={faChevronRight} faChevronDown={faChevronDown}/>
     </div>
   );
 }

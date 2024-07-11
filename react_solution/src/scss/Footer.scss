@@ -21,24 +21,54 @@ $footer-color: #262b2f;
     color: $footer-color;
     margin-left: 1rem;
     font-size: 18px; 
+    width: 75px;
+    height: 80px;
 }
 
 .footer-text-logo {
-    color: $footer-color;
-    border-right: 2px solid black;
-    line-height: 30px;
+    color: #262b2f;
+    border-bottom: 1px solid #2a2d33;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    padding: 0 50px;
+    font-size: 24px;
 }
 
 .footer-button {
     margin-right: 4rem;
-    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: #feffff;
 }
 
 .footer-panel {
     position: absolute;
     bottom: 100%;
     right: 0;
-    background-color: rgba(21, 23, 27, 255);
+    background-color: #fefffe;
     border: 1px solid $footer-color;
-    padding: 1rem;
-  }
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 40px;
+}
+
+.footer-panel-options {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-panel-options:hover {
+    color: #c48844;
+}
+
+.footer-text-logo span {
+    background: #15171b;
+    padding: 0 10px; 
+}
