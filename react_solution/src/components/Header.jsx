@@ -6,10 +6,10 @@ const Header = () => {
     return (
         <>
             <header>
-                <div>
-                    <img src={logo} alt="Logo" className="test"/>
-                </div>
-                <p>Zadanie rekrutacyjne</p>
+                <a href='/'>
+                    <img src={logo} alt="Logo" className="logo"/>
+                </a>
+                <p className="header-par">Zadanie <b>rekrutacyjne</b></p>
             </header>
         </>
     )
