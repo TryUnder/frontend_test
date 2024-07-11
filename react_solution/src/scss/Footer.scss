@@ -7,7 +7,7 @@ $footer-color: #262b2f;
     padding: 1rem;
     background-color: rgba(21,23,27,255);
     border-top: 0.1rem solid black;
-    max-height: 10vh;
+    
 }
 
 .footer-flex {
@@ -20,12 +20,18 @@ $footer-color: #262b2f;
     border: 1px solid $footer-color;
     color: $footer-color;
     margin-left: 1rem;
-    font-size: 18px;
-    
+    font-size: 18px; 
+}
+
+.footer-text-logo {
+    color: $footer-color;
+    border-right: 2px solid black;
+    line-height: 30px;
 }
 
 .footer-button {
     margin-right: 4rem;
+    
 }
 
 .footer-panel {
