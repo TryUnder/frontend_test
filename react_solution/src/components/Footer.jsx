@@ -14,6 +14,11 @@ const Footer = ({FontAwesomeIcon, faChevronUp, faChevronRight, faChevronDown}) =
     }
 
     const appendName = () => {
+        const userName = document.getElementById('user-name').innerHTML;
+        if (userName.includes('Hubert Lewowicki')) {
+            return;
+        }
+        
         document.getElementById('user-name').innerHTML += '<br>Hubert Lewowicki';
     }
 

@@ -25,6 +25,12 @@ $footer-color: #262b2f;
     height: 80px;
 }
 
+.footer-text:hover {
+    cursor: pointer;
+    border: 1px solid #b08c5e;
+    color: #a4a7b6;
+}
+
 .footer-text-logo {
     color: #262b2f;
     border-bottom: 1px solid #2a2d33;
@@ -54,6 +60,7 @@ $footer-color: #262b2f;
     flex-direction: column;
     gap: 5px;
     margin-right: 40px;
+    box-shadow: black 0px 0px 30px;
 }
 
 .footer-panel-options {

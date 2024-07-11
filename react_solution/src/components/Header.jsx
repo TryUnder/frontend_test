@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import '../scss/Header.scss';
-import logoGrey from '../images/logo_gray.png';
-import logoOrange from '../images/logo_orange.png';
 
 const Header = () => {
-    const [ logoSrc, setLogoSrc ] = useState(logoGrey);
+    const greyLogo = 'https://github.com/TryUnder/frontend_test/blob/master/react_solution/src/images/logo_gray.png?raw=true';
+    const orangeLogo = 'https://github.com/TryUnder/frontend_test/blob/master/react_solution/src/images/logo_orange.png?raw=true'
+    const [ logoSrc, setLogoSrc ] = useState(greyLogo);
 
     const handleMouseOver = () => {
-        setLogoSrc(logoOrange)
+        setLogoSrc(orangeLogo)
     }
 
     const handleMouseOut = () => {
-        setLogoSrc(logoGrey)
+        setLogoSrc(greyLogo)
     }
 
     return (
