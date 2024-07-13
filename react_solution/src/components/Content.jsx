@@ -10,7 +10,7 @@ const Content = () => {
                 </div>
                 <div className="block-container">
                     <div className="first-block">
-                        <p className="font-style">BLOK PIERWSZY</p>
+                        <p className="font-style par-first-mobile">BLOK PIERWSZY</p>
                         <div className="radio-group">
                             <div className="radio-item">
                                 <input type="radio" id="option1" className="radio-group" name="option" />
@@ -27,10 +27,10 @@ const Content = () => {
                         </div>
                     </div>
                     <div className="second-block">
-                        <p className="font-style">BLOK DRUGI</p>
+                        <p className="font-style par-second-mobile">BLOK DRUGI</p>
                         <div className="buttons-div">
-                            <button className="font-style buttons-hov">ZASTĄP</button>
-                            <button className="font-style buttons-hov">DOKLEJ</button>
+                            <button className="font-style buttons-hov button-mobile">ZASTĄP</button>
+                            <button className="font-style buttons-hov button-mobile">DOKLEJ</button>
                         </div>
                         
                     </div>
