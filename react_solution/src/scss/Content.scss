@@ -29,28 +29,28 @@ h1 {
 .block-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; 
+    justify-content: center; 
     padding-top: 2rem;
 
     @media (max-width: 960px) {
-        justify-content: space-between; /* Ensure blocks are spread out evenly */
+        justify-content: space-between; 
     }
 }
 
 .first-block, .second-block, .third-block {
     flex: 1;
     text-align: center;
-    margin: 0.5rem; /* Add some spacing between blocks */
+    margin: 0.5rem; 
 
     @media (max-width: 960px) {
-        flex-basis: calc(50% - 1rem); /* Two blocks per row with margin */
+        flex-basis: calc(50% - 1rem); 
     }
 }
 
 .third-block {
     @media (max-width: 960px) {
-        flex-basis: 100%; /* Full width on small screens */
+        flex-basis: 100%;
     }
 }
 
@@ -92,7 +92,7 @@ h1 {
     transition: background-color 0.2s, border-color 0.2s;
 
     @media (max-width: 960px) {
-        width: 0.5rem; /* Reduce size of radio buttons */
+        width: 0.5rem; 
         height: 0.5rem;
     }
 }
@@ -107,7 +107,7 @@ h1 {
     background-color: $hoverRadioColor;
 
     @media (max-width: 960px) {
-        width: 0.8rem; /* Reduce size of checked state */
+        width: 0.8rem; 
         height: 0.8rem;
     }
 }
@@ -159,10 +159,10 @@ h1 {
     padding: 2rem 0 0 0;
 
     @media (max-width: 960px) {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; 
         justify-content: flex-end;
         align-items: flex-end;
-        gap: 1rem; /* Adjust gap between buttons */
+        gap: 1rem; 
         min-width: 100px;
         max-width: 200px;
         margin-left: auto;
