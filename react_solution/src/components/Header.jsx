@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import '../scss/Header.scss';
 
 const Header = () => {
-    const greyLogo = 'https://github.com/TryUnder/frontend_test/blob/master/react_solution/src/images/logo_gray.png?raw=true';
-    const orangeLogo = 'https://github.com/TryUnder/frontend_test/blob/master/react_solution/src/images/logo_orange.png?raw=true'
+    const greyLogo = 'https://i.ibb.co/MpCk9vs/logo-gray.png';
+    const orangeLogo = 'https://i.ibb.co/zJXCNGg/logo-orange.png'
     const [ logoSrc, setLogoSrc ] = useState(greyLogo);
 
     const handleMouseOver = () => {
