@@ -36,6 +36,7 @@ h1 {
 
     @media (max-width: 960px) {
         justify-content: space-between; 
+        padding-top: 0;
     }
 }
 
@@ -117,8 +118,6 @@ h1 {
             height: 0.7rem;
         }
     }
-
-    
 }
 
 .radio-item input[type="radio"]::after {

@@ -7,7 +7,7 @@ $footer-color: #262b2f;
     padding: 1rem;
     background-color: rgba(21,23,27,255);
     border-top: 0.1rem solid black;
-    
+    height: 10vh;
 }
 
 .footer-flex {
@@ -19,10 +19,10 @@ $footer-color: #262b2f;
 .footer-text {
     border: 1px solid $footer-color;
     color: $footer-color;
-    margin-left: 1rem;
+    margin: 0 1rem 1rem 1rem;
     font-size: 18px; 
-    width: 75px;
-    height: 80px;
+    width: 60px;
+    height: 64px;
 }
 
 .footer-text:hover {
@@ -78,8 +78,9 @@ $footer-color: #262b2f;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-right: 40px;
+    margin: 0 5rem 0 0;
     box-shadow: black 0px 0px 30px;
+    font-size: 14px;
 }
 
 .footer-panel-options {
