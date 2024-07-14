@@ -48,7 +48,6 @@ const Footer = ({FontAwesomeIcon, faChevronUp, faChevronRight, faChevronDown}) =
                                 <FontAwesomeIcon icon={faChevronRight} />
                                 <a onClick={appendName}>POKAŻ DANE OSOBOWE</a>
                             </div>
-                            
                         </div>
                     )
                 }

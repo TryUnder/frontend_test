@@ -8,6 +8,7 @@ $hoverRadioColor: #fefffe;
     align-items: center;
     color: white;
     min-height: 100vh;
+    overflow: scroll;
 }
 
 h1 {
@@ -54,12 +55,13 @@ h1 {
     }
 }
 
-
 .radio-group {
     display: flex;
     flex-direction: column;
     padding: 2rem 0 0 2rem;
     gap: 1.3rem;
+    user-select: none;
+    
 
     @media (max-width: 960px) {
         gap: 1rem;
@@ -84,32 +86,44 @@ h1 {
     width: 1.5rem;
     height: 1.5rem;
     appearance: none;
-    border: 2px solid $hoverRadioColor;
     border-radius: 50%;
+    border: 5px solid white;
     position: relative;
     cursor: pointer;
     outline: none;
     transition: background-color 0.2s, border-color 0.2s;
 
     @media (max-width: 960px) {
-        width: 0.5rem; 
-        height: 0.5rem;
+        width: 2rem; 
+        height: 2rem;
     }
+
+    &:hover {
+        border-color: $hoverRadioColor;
+    }
+
+    &:checked::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1rem;
+        height: 1rem;
+        background-color: white;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        @media (max-width: 960px) {
+            width: 0.7rem; 
+            height: 0.7rem;
+        }
+    }
+
+    
 }
 
-.radio-item input[type="radio"]:hover {
-    border-color: $hoverRadioColor;
-}
-
-.radio-item input[type="radio"]:checked {
-    width: 1rem;
-    height: 1rem;
-    background-color: $hoverRadioColor;
-
-    @media (max-width: 960px) {
-        width: 0.8rem; 
-        height: 0.8rem;
-    }
+.radio-item input[type="radio"]::after {
+    border-radius: 50%;
+    background: white;
 }
 
 .par-second-mobile {
@@ -125,7 +139,6 @@ h1 {
         text-align: left;
         margin-left: 2rem;
     }
-
 }
 
 .radio-item input[type="radio"]:checked + label {
