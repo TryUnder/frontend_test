@@ -30,7 +30,7 @@ Pomyślnie zrealizowany został główny cel aplikacji, tzn:
 <br /> ✅ Doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie.
 <br /> ✅ Przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal).
 <br /> ⬜ Button w footerze ("pokaż") wysuwający ramkę bez użycia JSa.
-<br /> ✅ Rezultat prac wrzucić do podglądu na jakąś darmową platformę (np. netlify/heroku). - 
+<br /> ✅ Rezultat prac wrzucić do podglądu na jakąś darmową platformę (np. netlify/heroku). - [Link](https://chipper-gingersnap-914633.netlify.app/)
 
 ## Instalacja programu
 Wykonanie poniższych komend w terminalu, pozwoli na zainstalowanie projektu.
@@ -38,3 +38,10 @@ Wykonanie poniższych komend w terminalu, pozwoli na zainstalowanie projektu.
 * `cd frontend_test/react_solution`
 * `npm install`
 * `npm start`
+
+## Podgląd wersji desktopowej
+![desktop](https://github.com/user-attachments/assets/a0daeae2-faf4-46cf-8510-534a482af88d)
+
+
+## Podgląd wersji mobilnej
+![mobile](https://github.com/user-attachments/assets/6e05b973-2d24-4a00-b4ba-c79374555a8c)
