@@ -4,104 +4,106 @@ $footer-color: #262b2f;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(21,23,27,255);
+    background-color: rgba(21, 23, 27, 1);
     border-top: 0.1rem solid black;
 
     @media (max-width: 570px) {
-    position: static;
-    }
-}
-
-.footer-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    padding: 1rem;
-    margin: 0 auto;
-}
-
-.footer-text {
-    border: 1px solid $footer-color;
-    color: $footer-color;
-    font-size: 18px; 
-    width: 60px;
-    height: 64px;
-}
-
-.footer-text:hover {
-    cursor: pointer;
-    border: 1px solid #b08c5e;
-    color: #a4a7b6;
-    animation: rotate 0.5s ease-in-out;
-    
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-        border-color:transparent;
-        border: 1px solid #b08c5e;
+        position: static;
     }
 
-    100% {
-        transform: rotate(360deg);
-        border-color:transparent;
-        border: 1px solid #b08c5e;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        padding: 1rem;
+        margin: 0 auto;
     }
-}
 
-.footer-text-logo {
-    color: #262b2f;
-    border-bottom: 1px solid #2a2d33;
-    line-height: 0.1em;
-    margin: 10px 0 20px 5.5rem;
-    padding: 0 50px;
-    font-size: 24px;
-    @media (max-width: 960px) {
-        display: none;
+    &__text {
+        border: 1px solid $footer-color;
+        color: $footer-color;
+        font-size: 18px;
+        width: 60px;
+        height: 64px;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid #b08c5e;
+            color: #a4a7b6;
+            animation: rotate 0.5s ease-in-out;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+                border-color: transparent;
+                border: 1px solid #b08c5e;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                border-color: transparent;
+                border: 1px solid #b08c5e;
+            }
+        }
     }
-}
 
-.footer-button {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    color: #feffff;
-}
+    &__logo {
+        color: #262b2f;
+        border-bottom: 1px solid #2a2d33;
+        line-height: 0.1em;
+        margin: 10px 0 20px 5.5rem;
+        padding: 0 50px;
+        font-size: 24px;
 
-.footer-panel {
-    position: relative;
-    bottom: 160px;
-    right: 20%;
-    background-color: #fefffe;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    box-shadow: black 0px 0px 30px;
-    font-size: 14px;
-    height: 0;
-    width: 0;
-}
+        @media (max-width: 960px) {
+            display: none;
+        }
 
-.footer-panel-options {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-    cursor: pointer;
-    background-color: white;
-    width: 185px;
-    padding: 5px;
-    margin-bottom: -5px;
-}
+        span {
+            background: #15171b;
+            padding: 0 10px;
+        }
+    }
 
-.footer-panel-options:hover {
-    color: #c48844;
-}
+    &__button {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        color: #a3a8b5;
+        background-color: #15171b;
+        border: 1px solid #2c2c33;
+    }
 
-.footer-text-logo span {
-    background: #15171b;
-    padding: 0 10px; 
+    &__panel {
+        position: relative;
+        bottom: 160px;
+        right: 20%;
+        background-color: #fefffe;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: black 0px 0px 30px;
+        font-size: 14px;
+        height: 0;
+        width: 0;
+    }
+
+    &__panel-option {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+        background-color: white;
+        width: 185px;
+        padding: 5px;
+        margin-bottom: -5px;
+
+        &:hover {
+            color: #c48844;
+        }
+    }
 }

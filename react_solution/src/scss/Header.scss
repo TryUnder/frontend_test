@@ -1,43 +1,85 @@
-.logo {
-    width: 75px;
-    height: 75px; 
-}
+// .logo {
+//     width: 75px;
+//     height: 75px; 
+// }
 
-.logo:hover {
-    cursor: pointer;
-    background-image: url("https://i.ibb.co/zJXCNGg/logo-orange.png");
+// .logo:hover {
+//     cursor: pointer;
+//     background-image: url("https://i.ibb.co/zJXCNGg/logo-orange.png");
     
-}
+// }
 
-.header-par {
-    color: rgba(254,255,254,255);
-    margin: 0;
-    text-align: right;
-    white-space: nowrap;
-    font-size: 26px;
-    font-weight: 100;
-    margin-right: 1.5rem;
-    margin-left: auto;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+// .header-par {
+//     color: rgba(254,255,254,255);
+//     margin: 0;
+//     text-align: right;
+//     white-space: nowrap;
+//     font-size: 26px;
+//     font-weight: 100;
+//     margin-right: 1.5rem;
+//     margin-left: auto;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+// }
 
-.headerWrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
+// .headerWrapper {
+//     width: 90%;
+//     margin: 0 auto;
+//     display: flex;
+//     align-items: center;
+// }
 
-header {
+// header {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     padding: 0.5rem;
+//     display: flex;
+//     //justify-content: space-between;
+//     align-items: center;
+//     background-color: rgba(10,12,17,255);
+//     box-sizing: border-box;
+//     z-index: 9999;
+// }
+
+.header {
     position: fixed;
     top: 0;
     width: 100%;
     padding: 0.5rem;
     display: flex;
-    //justify-content: space-between;
     align-items: center;
-    background-color: rgba(10,12,17,255);
+    background-color: rgba(10, 12, 17, 1);
     box-sizing: border-box;
     z-index: 9999;
+
+    &__wrapper {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 75px;
+        height: 75px;
+
+        &:hover {
+            cursor: pointer;
+            background-image: url("https://i.ibb.co/zJXCNGg/logo-orange.png");
+        }
+    }
+
+    &__par {
+        color: rgba(254, 255, 254, 1);
+        margin: 0;
+        text-align: right;
+        white-space: nowrap;
+        font-size: 26px;
+        font-weight: 100;
+        margin-right: 1.5rem;
+        margin-left: auto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }

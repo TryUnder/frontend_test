@@ -76,41 +76,41 @@ const Content = () => {
 
     return (
         <>
-            <main className="main-container">
-                <div>
-                    <h1>Nagłówek H1</h1>
-                </div>
-                <div className="block-container">
-                    <div className="first-block">
-                        <p className="font-style par-first-mobile">BLOK PIERWSZY</p>
-                        <div className="radio-group">
-                            <div className="radio-item">
-                                <input type="radio" id="option1" className="radio-group" name="option" value="1" onChange={handleOptionChange}/>
-                                <label className="font-option">Opcja pierwsza</label>
-                            </div>
-                            <div className="radio-item">
-                                <input type="radio" id="option2" className="radio-group" name="option" value="2" onChange={handleOptionChange} />
-                                <label className="font-option">Opcja druga</label>
-                            </div>
-                            <div className="radio-item">
-                                <input type="radio" id="option3" className="radio-group" name="option" value="3" onChange={handleOptionChange}/>
-                                <label className="font-option">Opcja losowa</label>
-                            </div>
+            <main className="content">
+            <div className="content__header">
+                <h1>Nagłówek H1</h1>
+            </div>
+            <div className="content__block-container">
+                <div className="content__block content__block--first">
+                    <p className="content__text content__text--first"><strong>BLOK PIERWSZY</strong></p>
+                    <div className="content__radio-group">
+                        <div className="content__radio-item">
+                            <input type="radio" id="option1" className="content__radio" name="option" value="1" onChange={handleOptionChange} />
+                            <label htmlFor="option1" className="content__label">Opcja pierwsza</label>
+                        </div>
+                        <div className="content__radio-item">
+                            <input type="radio" id="option2" className="content__radio" name="option" value="2" onChange={handleOptionChange} />
+                            <label htmlFor="option2" className="content__label">Opcja druga</label>
+                        </div>
+                        <div className="content__radio-item">
+                            <input type="radio" id="option3" className="content__radio" name="option" value="3" onChange={handleOptionChange} />
+                            <label htmlFor="option3" className="content__label">Opcja losowa</label>
                         </div>
                     </div>
-                    <div className="second-block">
-                        <p className="font-style par-second-mobile">BLOK DRUGI</p>
-                        <div className="buttons-div">
-                            <button className="font-style buttons-hov button-mobile" onClick={replaceContent}>ZASTĄP</button>
-                            <button className="font-style buttons-hov button-mobile" onClick={appendContent}>DOKLEJ</button>
-                        </div>
-                    </div>
-                    <div className="third-block">
-                        <p className="font-style par-cut">BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE...</p>
-                        <p className="par-text">{fullContent}</p>
+                </div>
+                <div className="content__block content__block--second">
+                    <p className="content__text content__text--second"><strong>BLOK DRUGI</strong></p>
+                    <div className="content__buttons">
+                        <button className="content__button" onClick={replaceContent}>ZASTĄP</button>
+                        <button className="content__button" onClick={appendContent}>DOKLEJ</button>
                     </div>
                 </div>
-            </main>
+                <div className="content__block content__block--third">
+                    <p className="content__text content__text--cut"><strong>BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE...</strong></p>
+                    <p className="content__text">{fullContent}</p>
+                </div>
+            </div>
+        </main>
         </>
     )
 }

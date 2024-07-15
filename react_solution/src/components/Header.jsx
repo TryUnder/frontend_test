@@ -16,18 +16,18 @@ const Header = () => {
 
     return (
         <>
-            <header>
-                <div class="headerWrapper">
+            <header className="header">
+                <div className="header__wrapper">
                 <a href='/'>
                     <img 
                         src={logoSrc} 
                         alt="Logo" 
-                        className="logo" 
+                        className="header__logo" 
                         onMouseOver={handleMouseOver}
                         onMouseOut={handleMouseOut}    
                     />
                 </a>
-                <p className="header-par" id="user-name">Zadanie <b>rekrutacyjne</b></p>
+                <p className="header__par" id="user-name">Zadanie <b>rekrutacyjne</b></p>
                 </div>
             </header>
         </>
