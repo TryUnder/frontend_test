@@ -35,9 +35,7 @@ const Footer = ({FontAwesomeIcon, faChevronUp, faChevronRight, faChevronDown}) =
                                 isPanelVisible ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp}  />
                             }
                         </button>
-                    </div>
-                </div>
-                {
+                        {
                     isPanelVisible && (
                         <div className="footer-panel">
                             <div className="footer-panel-options">
@@ -51,6 +49,8 @@ const Footer = ({FontAwesomeIcon, faChevronUp, faChevronRight, faChevronDown}) =
                         </div>
                     )
                 }
+                    </div>
+                </div>
             </footer>
         </>
     )

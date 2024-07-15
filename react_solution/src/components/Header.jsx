@@ -17,6 +17,7 @@ const Header = () => {
     return (
         <>
             <header>
+                <div class="headerWrapper">
                 <a href='/'>
                     <img 
                         src={logoSrc} 
@@ -27,6 +28,7 @@ const Header = () => {
                     />
                 </a>
                 <p className="header-par" id="user-name">Zadanie <b>rekrutacyjne</b></p>
+                </div>
             </header>
         </>
     )

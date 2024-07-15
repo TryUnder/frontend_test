@@ -106,7 +106,7 @@ const Content = () => {
                         </div>
                     </div>
                     <div className="third-block">
-                        <p className="font-style">BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE...</p>
+                        <p className="font-style par-cut">BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE...</p>
                         <p className="par-text">{fullContent}</p>
                     </div>
                 </div>

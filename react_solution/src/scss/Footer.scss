@@ -4,22 +4,26 @@ $footer-color: #262b2f;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 1rem;
     background-color: rgba(21,23,27,255);
     border-top: 0.1rem solid black;
-    height: 10vh;
+
+    @media (max-width: 570px) {
+    position: static;
+    }
 }
 
 .footer-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 .footer-text {
     border: 1px solid $footer-color;
     color: $footer-color;
-    margin: 0 1rem 1rem 1rem;
     font-size: 18px; 
     width: 60px;
     height: 64px;
@@ -60,7 +64,6 @@ $footer-color: #262b2f;
 }
 
 .footer-button {
-    margin-right: 4rem;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -69,18 +72,17 @@ $footer-color: #262b2f;
 }
 
 .footer-panel {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
+    position: relative;
+    bottom: 160px;
+    right: 20%;
     background-color: #fefffe;
-    border: 1px solid $footer-color;
-    padding: 0.3rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 0 5rem 0 0;
     box-shadow: black 0px 0px 30px;
     font-size: 14px;
+    height: 0;
+    width: 0;
 }
 
 .footer-panel-options {
@@ -89,6 +91,10 @@ $footer-color: #262b2f;
     gap: 5px;
     align-items: center;
     cursor: pointer;
+    background-color: white;
+    width: 185px;
+    padding: 5px;
+    margin-bottom: -5px;
 }
 
 .footer-panel-options:hover {
