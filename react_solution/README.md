@@ -20,4 +20,21 @@ Pomyślnie zrealizowany został główny cel aplikacji, tzn:
 * Przycisk `Pokaż` w stopce, wysuwa ramkę, z której przycisk `POKAŻ DANE OSOBOWE` dokleja imię i nazwisko autora w nagłówku, a `ZRESETUJ USTAWIENIA` przeładowuje stronę.
 
 ## Zadania dodatkowe
-* [x] Venus
+ ✅ Osadzenie całego zadania w jakimś JSowym frameworku (najlepiej Angular) - <b>Zastosowano React.</b>
+<br /> ✅ Brak plików graficznych w końcowym projekcie (brak plików typu jpg, gif, png, svg).
+<br /> ✅ CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót.
+<br /> ✅ Zastosowanie BEM.
+<br /> ✅ Spełnianie zasad a11y.
+<br /> ✅ Logiczne wykorzystanie jednostek rem, em, vh, vw (w efekcie jak najmniejsze użycie jednostki px) - w taki sposób by w efekcie responsywność spełniona została jak najmniejszą ilością kodu.
+<br />⬜ Mobile first.
+<br /> ✅ Doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie.
+<br /> ✅ Przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal).
+<br /> ⬜ Button w footerze ("pokaż") wysuwający ramkę bez użycia JSa.
+<br /> ✅ Rezultat prac wrzucić do podglądu na jakąś darmową platformę (np. netlify/heroku). - 
+
+## Instalacja programu
+Wykonanie poniższych komend w terminalu, pozwoli na zainstalowanie projektu.
+* `git clone https://github.com/TryUnder/frontend_test.git`
+* `cd frontend_test/react_solution`
+* `npm install`
+* `npm start`
