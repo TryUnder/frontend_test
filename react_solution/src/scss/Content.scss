@@ -138,6 +138,7 @@ $hoverRadioColor: #fefffe;
 
     &__text {
         &--first {
+            margin-bottom: 3rem;
             @media (max-width: 960px) {
                 text-align: left;
                 margin-left: 2rem;
@@ -145,6 +146,7 @@ $hoverRadioColor: #fefffe;
         }
 
         &--second {
+            margin-bottom: 3rem;
             @media (max-width: 960px) {
                 text-align: right;
                 margin-right: 2rem;
@@ -152,10 +154,16 @@ $hoverRadioColor: #fefffe;
         }
 
         &--cut {
+            margin-bottom: 3rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             width: 90%;
+
+            @media (max-width: 960px) {
+               text-align: center;
+               margin-bottom: 0;
+            }
         }
     }
 
