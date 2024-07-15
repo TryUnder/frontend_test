@@ -1,6 +1,7 @@
 # Projekt Frontend-test
 
 Bieżące repozytorium stanowi rozwiązanie zadania rekrutacyjnego.
+Dokumentacja w języku angielskim - [link](https://github.com/TryUnder/frontend_test/wiki/Documentation).
 
 ## Projekt frontend-test
 
